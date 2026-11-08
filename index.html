@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bharath Kaveti | Marketing Technology Engineer</title>
+<meta name="description" content="Marketing Technology Engineer: tag management, analytics implementation, server-side tagging, and CDP data pipelines.">
+<style>
+:root{--bg:#fbfaf7;--fg:#1b1d22;--muted:#5d6370;--line:#e4e1da;--card:#fff;--accent:#2b5fd9}
+@media (prefers-color-scheme:dark){:root{--bg:#121417;--fg:#e8e9ec;--muted:#9aa1ad;--line:#2a2e35;--card:#191c21;--accent:#7aa2ff}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,sans-serif}
+.wrap{max-width:820px;margin:0 auto;padding:56px 20px 80px}
+header h1{font-size:2.4rem;line-height:1.1;margin:0 0 6px;letter-spacing:-.02em}
+header .role{font-size:1.15rem;color:var(--accent);font-weight:600;margin:0 0 16px}
+header p{color:var(--muted);max-width:620px;margin:0}
+nav{margin-top:20px;display:flex;gap:18px;flex-wrap:wrap}
+a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
+h2{font-size:.8rem;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);margin:56px 0 16px;padding-bottom:8px;border-bottom:1px solid var(--line)}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px}
+.stat b{display:block;font-size:1.6rem;letter-spacing:-.02em}
+.stat span{color:var(--muted);font-size:.9rem}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:20px;margin-bottom:12px}
+.card h3{margin:0 0 6px;font-size:1.05rem}
+.card p{margin:0;color:var(--muted)}
+.tags{margin-top:10px;display:flex;flex-wrap:wrap;gap:6px}
+.tags span{font-size:.78rem;border:1px solid var(--line);border-radius:99px;padding:2px 10px;color:var(--muted)}
+.job{display:grid;grid-template-columns:150px 1fr;gap:16px;padding:14px 0;border-bottom:1px solid var(--line)}
+.job:last-child{border-bottom:0}
+.job .when{color:var(--muted);font-size:.9rem}
+.job h3{margin:0;font-size:1rem}
+.job p{margin:2px 0 0;color:var(--muted);font-size:.95rem}
+.skills{display:grid;grid-template-columns:160px 1fr;gap:8px 16px}
+.skills dt{font-weight:600}.skills dd{margin:0;color:var(--muted)}
+footer{margin-top:64px;color:var(--muted);font-size:.85rem}
+@media (max-width:560px){header h1{font-size:2rem}.job,.skills{grid-template-columns:1fr;gap:2px}.skills dd{margin-bottom:10px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <h1>Bharath Kaveti</h1>
+  <p class="role">Marketing Technology Engineer · Analytics &amp; Tag Management</p>
+  <p>I build the measurement layer behind e-commerce: tag management, data layers, conversion tracking, and the pipelines that feed customer data platforms. 6+ years across retail, telecom, consumer products, and medtech. Based in Los Angeles.</p>
+  <nav><a href="https://www.linkedin.com/in/bharathkaveti">LinkedIn</a><a href="https://github.com/bharathk42">GitHub</a><a href="#projects">Projects</a><a href="#experience">Experience</a></nav>
+</header>
+
+<h2>Impact</h2>
+<div class="stats">
+  <div class="stat"><b>134</b><span>tags migrated Adobe Launch → GTM, zero data loss</span></div>
+  <div class="stat"><b>~27M</b><span>sessions/month in behavioral analytics I run</span></div>
+  <div class="stat"><b>40%</b><span>fewer QA failures after building a tag governance framework</span></div>
+  <div class="stat"><b>~5%</b><span>web revenue undercount traced to root cause and fixed</span></div>
+</div>
+
+<h2>Selected work</h2>
+<div class="card">
+  <h3>Enterprise tag management migration</h3>
+  <p>Led the move from Adobe Launch to Google Tag Manager across two retail e-commerce sites (84 and 50 tags) with zero data loss, then supported a third brand on an accelerated timeline.</p>
+  <div class="tags"><span>GTM</span><span>Adobe Launch</span><span>UAT</span></div>
+</div>
+<div class="card">
+  <h3>New-customer acquisition tracking</h3>
+  <p>Designed a tri-state <code>new_customer</code> data layer flag for Google Ads conversion tracking so marketing can switch lookback windows (12 months vs 540 days) without an engineering release.</p>
+  <div class="tags"><span>Google Ads</span><span>Data layer</span><span>Enhanced conversions</span></div>
+</div>
+<div class="card">
+  <h3>Behavioral analytics at scale</h3>
+  <p>Architected a Quantum Metric implementation across web and mobile apps: ~27M sessions a month, 258 custom events, 19 workspaces. Dashboards cover checkout funnel, channel efficiency, and bot traffic.</p>
+  <div class="tags"><span>Quantum Metric</span><span>Mobile apps</span><span>Funnel analysis</span></div>
+</div>
+<div class="card">
+  <h3>CDP and server-side tagging</h3>
+  <p>Building the tagging and data layer infrastructure that feeds behavioral and transactional signals into Salesforce Data Cloud, plus server-side tagging and Meta CAPI for durable conversion signal.</p>
+  <div class="tags"><span>Salesforce Data Cloud</span><span>Server-side tagging</span><span>Meta CAPI</span></div>
+</div>
+
+<h2 id="projects">Open-source projects</h2>
+<div class="card">
+  <h3><a href="https://github.com/bharathk42/ecommerce-datalayer-spec">ecommerce-datalayer-spec</a></h3>
+  <p>GA4-aligned e-commerce data layer spec with a JSON Schema and a Python validator that catches contract bugs in UAT.</p>
+  <div class="tags"><span>JSON Schema</span><span>Python</span><span>GA4</span></div>
+</div>
+<div class="card">
+  <h3><a href="https://github.com/bharathk42/tag-qa-toolkit">tag-qa-toolkit</a></h3>
+  <p>Release checklist, defect template, and a DevTools console script that audits every <code>dataLayer.push</code> live.</p>
+  <div class="tags"><span>JavaScript</span><span>QA</span><span>GTM</span></div>
+</div>
+
+<h2 id="experience">Experience</h2>
+<div class="job"><div class="when">2023 – Present</div><div><h3>Marketing Technology Manager</h3><p>Multi-brand specialty retailer (e-commerce)</p></div></div>
+<div class="job"><div class="when">2021 – 2023</div><div><h3>Senior Data Analyst</h3><p>AT&amp;T · attribution and campaign analytics across 11 channels</p></div></div>
+<div class="job"><div class="when">2020 – 2021</div><div><h3>Web Analytics Consultant</h3><p>Mattel · Adobe Analytics implementation and SDRs</p></div></div>
+<div class="job"><div class="when">2019 – 2020</div><div><h3>Web Analyst</h3><p>Medtronic · Adobe Launch, GDPR data governance</p></div></div>
+
+<h2>Toolbox</h2>
+<dl class="skills">
+  <dt>Tag management</dt><dd>Google Tag Manager, Adobe Experience Platform Tags, Tealium iQ, server-side tagging</dd>
+  <dt>Analytics</dt><dd>GA4 / GA 360, Adobe Analytics, Customer Journey Analytics, Quantum Metric</dd>
+  <dt>Ad platforms</dt><dd>Google Ads conversion tracking, Meta CAPI, Invoca</dd>
+  <dt>CDP &amp; data</dt><dd>Salesforce Data Cloud, Adobe Real-Time CDP, SQL, Python, Snowflake, Databricks</dd>
+  <dt>Viz &amp; QA</dt><dd>Tableau, Power BI, Looker Studio, ObservePoint, Chrome DevTools</dd>
+</dl>
+
+<h2>Education</h2>
+<p>Master of Computer Science, Texas A&amp;M University<br>Bachelor of Technology, GITAM University</p>
+
+<footer>© 2026 Bharath Kaveti</footer>
+</div>
+</body>
+</html>
